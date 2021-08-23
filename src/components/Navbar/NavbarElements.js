@@ -10,7 +10,7 @@ export const NavbarContainer = styled.div`
 export const NavbarWrapper = styled.ul`
 	padding: 10px;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	margin: auto;
 	background-color: #2e3192;
 	list-style-type: none;

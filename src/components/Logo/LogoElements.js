@@ -33,6 +33,7 @@ export const Logoimg = styled.img`
 	}
 `;
 export const TitleS = styled.h1`
+	
 	display: none;
 	padding-left: 10px;
 	font-size: 18px;
@@ -42,6 +43,7 @@ export const TitleS = styled.h1`
 	}
 `;
 export const Title = styled.h1`
+font-family: 'Patua One', cursive;
 	padding-left: 20px;
 	color: #2e3192;
 	@media screen and (max-width: 817px){
