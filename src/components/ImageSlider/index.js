@@ -1,21 +1,18 @@
-import React, { useState } from "react";
-import { SliderContainer,Image } from "./ImageSliderElements";
+import React from "react";
+import { Image } from "./ImageSliderElements";
 import Carousel from "react-material-ui-carousel";
-import { Paper, Button } from "@material-ui/core";
 import images from "../Images/img1.jpg";
-import images2 from "../Images/img2.jpg";
-import images3 from "../Images/img3.jpg";
+
 import images4 from "../Images/img4.jpg";
 import { GrNext } from "react-icons/gr";
 import { GrPrevious } from "react-icons/gr";
-import { TrendingUpRounded } from "@material-ui/icons";
 
 const ImageSlider = () => {
   return (
     <>
           <Carousel
               animation={"slide"}
-              timeout={400}
+              timeout={200}
               NextIcon={<GrNext/>}
               PrevIcon={<GrPrevious />}
               navButtonsAlwaysVisible={true}
