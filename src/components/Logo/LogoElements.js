@@ -3,6 +3,7 @@ import { GiHamburgerMenu as bar } from "react-icons/gi";
 import { ImCross as cross } from "react-icons/im";
 import { Link as Links } from "react-router-dom";
 import { BiRightArrow as arrow } from "react-icons/bi";
+import {BiLeftArrow as arrowL} from "react-icons/bi"
 
 export const LogoContainer = styled.div`
   padding: 10px;
@@ -126,6 +127,13 @@ export const MenuWrapper = styled.ul`
 `;
 export const MenuElements = styled.li``;
 export const Arrow = styled(arrow)`
+transition: 0.3s ease-in-out;
+  position: relative;
+  top: 2px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+`;
+export const ArrowL = styled(arrowL)`
+transition: 0.3s ease-in-out;
   position: relative;
   top: 2px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);

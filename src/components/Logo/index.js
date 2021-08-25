@@ -11,18 +11,24 @@ import {
   MenuElements,
   MenuLink,
   Arrow,
+  ArrowL,
 } from "./LogoElements";
 import image from "../Images/logo.png";
 const Logo = (isOpen) => {
   const [clicked, isClicked] = useState(true);
-  const [hovered, onhovered] = useState(false);
+  const [programClicked, isProgramClicked] = useState(true);
+  const [employee, isEmployeeClicked] = useState(false);
+
+  const [students, isStudentsClicked] = useState(false);
+
+  const [downloads, isDownloadClicked] = useState(false);
+
+  const [research, isResearchClicked] = useState(false);
 
   const handleClick = () => {
     isClicked(!clicked);
   };
-  const handleHover = () => {
-    isClicked(!hovered);
-  };
+
   return (
     <>
       <LogoContainer>
@@ -46,27 +52,52 @@ const Logo = (isOpen) => {
               <MenuLink>Partners</MenuLink>
             </MenuElements>
             <MenuElements>
-              <MenuLink>
-                Programs <Arrow />
+              <MenuLink onClick={() => isProgramClicked(!programClicked)}>
+                Programs{" "}
+                {programClicked ? (
+                  <Arrow
+                    style={
+                      programClicked
+                        ? { }
+                        : {left: "-20%"   }
+                    }
+                  />
+                ) : (
+                  <ArrowL
+                    style={
+                      programClicked
+                        ? { display:"inline", left:"-20%"}
+                        : { left: "0" }
+                    }
+                  />
+                )}
               </MenuLink>
             </MenuElements>
             <MenuElements>
-              <MenuLink>Employees</MenuLink>
+              <MenuLink>
+                Employees <Arrow />
+              </MenuLink>
             </MenuElements>
             <MenuElements>
-              <MenuLink>Students</MenuLink>
+              <MenuLink>
+                Students <Arrow />
+              </MenuLink>
             </MenuElements>
             <MenuElements>
-              <MenuLink>Downloads</MenuLink>
+              <MenuLink>
+                Downloads <Arrow />
+              </MenuLink>
             </MenuElements>
             <MenuElements>
-              <MenuLink>Research</MenuLink>
+              <MenuLink>
+                Research <Arrow />
+              </MenuLink>
             </MenuElements>
             <MenuElements>
-              <MenuLink>Facilities</MenuLink>
+              <MenuLink>Facilities </MenuLink>
             </MenuElements>
             <MenuElements>
-              <MenuLink>Contacts</MenuLink>
+              <MenuLink>Contacts </MenuLink>
             </MenuElements>
           </MenuWrapper>
         </MenuContainer>

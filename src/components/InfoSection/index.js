@@ -1,11 +1,13 @@
 import React from 'react'
-import {InfoContainer,InfoWrapper} from './InfoSectionElements'
+import {InfoContainer,InfoWrapper,InfoImage,InfoTitle,InfoAction} from './InfoSectionElements'
 const Info = () => {
     return (
         <>
             <InfoContainer>
                 <InfoWrapper>
-                    
+                    <InfoImage> </InfoImage>
+                    <InfoTitle></InfoTitle>
+                    <InfoAction></InfoAction>
                 </InfoWrapper>
             </InfoContainer>
         </>
