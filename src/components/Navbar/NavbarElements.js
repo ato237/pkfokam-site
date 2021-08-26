@@ -58,8 +58,6 @@ export const DropdownContent = styled.div`
 		top: 115px;
 		transtion: 0.2s ease-in-out;
 	}
-
-
 	
 `;
 export const NavLinksDrop = styled(Links)`
