@@ -106,10 +106,11 @@ export const MenuCross = styled(cross)`
 `;
 
 export const MenuContainer = styled.div`
+
 	position: absolute;
 	z-index: 999;
 	width: 100%;
-	height: 80%;
+	height: 60%;
 	background: #2e3192;
 	display: grid;
 	align-items: center;
@@ -126,31 +127,55 @@ export const MenuContainer = styled.div`
 `;
 export const MenuWrapper = styled.ul`
 	list-style-type: none;
+	position: absolute;
+	top: -15px;
+	left: -10px;
 `;
 export const MenuElements = styled.li`
-	
+
+	margin-top: 10px;
 `;
 export const Arrow = styled(arrow)`
+	padding-left:5px;
 	cursor: pointer;
 	transition: 0.3s ease-in-out;
 	position: relative;
-	top: 2px;
-	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+	top: 3px;
+	&:hover {
+		background-color: #2e3192;
+		color: white;
+	}
 `;
 export const ArrowL = styled(arrowL)`
+	color: white;
 	cursor: pointer;
 	transition: 0.3s ease-in-out;
 	position: relative;
+	font-size: 25px;
 	top: 2px;
-	box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.5);
+	&:hover {
+		background-color: white;
+		color: #2e3192;
+	}
 `;
 
 export const MenuLink = styled(Links)`
+	@keyframes example {
+		0% {
+			opacity: 0%;
+		}
+
+		100% {
+			opacity: 100%;
+		}
+	}
+	animation-name: example;
+	animation-duration: 0.5s;
 	font-family: "Roboto", sans-serif;
 	cursor: help;
 	color: white;
 	font-size: 18px;
-	padding: 15px;
+	padding: 5px;
 	text-decoration: none;
 	display: block;
 	&:hover {
@@ -162,47 +187,24 @@ export const MenuLink = styled(Links)`
 export const OptionsContainer = styled.div`
 	@keyframes example {
 		0% {
-			background-color: red;
-			left: 0px;
-			top: 0px;
+			opacity: 0%;
 		}
 
-		75% {
-			background-color: green;
-			left: 0px;
-			top: 200px;
-		}
 		100% {
-			background-color: red;
-			left: 0px;
-			top: 0px;
+			opacity: 100%;
 		}
 	}
-	transition: 0.2s ease-in-out;
 	animation-name: example;
-	animation-duration: 4s;
+	animation-duration: 0.5s;
+	transition: 0.2s ease-in-out;
 	position: absolute;
-	bottom: -50px;
-	min-height: 1006px;
+	top: 0;
+	bottom: 0;
+	left: 10px;
+	min-height: 400px;
+	width:auto;
 	background-color: #2e3192;
 	z-index: 1;
-	@media screen and (max-width: 850px) {
-		top: 165px;
-		transition: 0.2s ease-in-out;
-	}
-
-	@media screen and (max-width: 817px) {
-		top: 142px;
-		transition: 0.2s ease-in-out;
-	}
-	@media screen and (max-width: 768px) {
-		top: 118px;
-		transtion: 0.2s ease-in-out;
-	}
-	@media screen and (max-width: 765px) {
-		top: 115px;
-		transtion: 0.2s ease-in-out;
-	}
 `;
 
 export const OptionsWrapper = styled.ul`
@@ -220,6 +222,7 @@ export const OptionsTitle = styled.h1`
 	font-family: "Roboto", sans-serif;
 `;
 export const OptionsLink = styled(Links)`
+	width: 250px;
 	color: white;
 	font-size: 12px;
 	padding: 5px 16px;

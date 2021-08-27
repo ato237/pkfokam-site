@@ -24,13 +24,31 @@ const Logo = () => {
 	const [clicked, isClicked] = useState(true);
 	
 	const [check,isChecked] = useState(false);
+	const [checkE,isCheckedE] = useState(false);
+
+	const [checkP,isCheckedP] = useState(false);
+
+	const [checkD,isCheckedD] = useState(false);
+
+	const [checkR,isCheckedR] = useState(false);
+
 	const handleClick = () => {
 		isClicked(!clicked);
 	};
 
-	const handleCheckedClicked = ()=>{
-		isChecked(!check)
+	const handleCheckedClickedE = ()=>{
+		isCheckedE(!checkE)
 	}
+	const handleCheckedClickedP = ()=>{
+		isCheckedP(!checkP)
+	}
+	const handleCheckedClickedD = ()=>{
+		isCheckedD(!checkD)
+	}
+	const handleCheckedClickedR = ()=>{
+		isCheckedR(!checkR)
+	}
+
 
 	return (
 		<>
@@ -46,7 +64,7 @@ const Logo = () => {
 				)}
 				<MenuContainer
 					style={clicked ? { opacity: "0", top: "100%" } : { opacity: "100%" }}>
-					<MenuWrapper>
+					<MenuWrapper  >
 						<MenuElements>
 							<MenuLink style={
 								check?{display: "none"}:{display:"inline"}
@@ -107,7 +125,21 @@ const Logo = () => {
 								check?{display: "none"}:{display:"inline"}
 								}>
 								Employees
-								<Arrow onClick = {handleCheckedClicked}/>
+								<Arrow onClick = {handleCheckedClickedE}/>
+								<OptionsContainer style={!checkE? {display:"none"}:{display:"inline"}}>
+								<ArrowL onClick ={handleCheckedClicked}/>
+								<OptionsWrapper>
+									<OptionsElements>
+										<OptionsTitle>Staff</OptionsTitle>
+										<OptionsLink to="/MBA">President & VIP</OptionsLink>
+										<OptionsLink to="/MSSE">Administration</OptionsLink>
+										<OptionsLink to="/computer-science">
+											Research Center
+										</OptionsLink>
+					
+									</OptionsElements>
+								</OptionsWrapper>
+							</OptionsContainer>
 							</MenuLink>
 						</MenuElements>
 						<MenuElements>

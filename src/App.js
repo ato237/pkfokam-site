@@ -14,6 +14,9 @@ function App() {
 				<Logo />
 				<Navbar />
 				<ImageSlider />
+				<ImageSlider />
+				<ImageSlider />
+
 				<Footer />
 			</Router>
 		</>
