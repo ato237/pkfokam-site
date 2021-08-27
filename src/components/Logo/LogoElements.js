@@ -109,13 +109,11 @@ export const MenuContainer = styled.div`
 
 	position: absolute;
 	z-index: 999;
+	background-color: #2e3192;
 	width: 100%;
-	height: 60%;
-	background: #2e3192;
 	display: grid;
 	align-items: center;
 	top: 58px;
-	left: 0;
 	transition: 0.3s ease-in-out;
 
 	@media screen and (min-width: 697px) {
@@ -126,16 +124,17 @@ export const MenuContainer = styled.div`
 	}
 `;
 export const MenuWrapper = styled.ul`
+	width: 50%;
+	background-color: #2e3192;
 	list-style-type: none;
 	position: absolute;
 	top: -15px;
-	left: -10px;
+	right: 0;
 `;
 export const MenuElements = styled.li`
-
 	margin-top: 10px;
 `;
-export const Arrow = styled(arrow)`
+export const ArrowL = styled(arrow)`
 	padding-left:5px;
 	cursor: pointer;
 	transition: 0.3s ease-in-out;
@@ -146,7 +145,7 @@ export const Arrow = styled(arrow)`
 		color: white;
 	}
 `;
-export const ArrowL = styled(arrowL)`
+export const Arrow = styled(arrowL)`
 	color: white;
 	cursor: pointer;
 	transition: 0.3s ease-in-out;
@@ -201,13 +200,16 @@ export const OptionsContainer = styled.div`
 	top: 0;
 	bottom: 0;
 	left: 10px;
-	min-height: 400px;
+	min-height: 100%;
 	width:auto;
 	background-color: #2e3192;
 	z-index: 1;
+	display: none;
 `;
 
 export const OptionsWrapper = styled.ul`
+	background-color: #2e3192;
+	width: 100%;
 	list-style-type: none;
 `;
 
