@@ -1,0 +1,286 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.header-pic
+{
+    width: 100%;
+    position: relative;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*background-image: url("../images/students.jpg");*/
+
+}
+.header{
+    font-family: Montserrat;
+    width: 100%;
+    position: absolute;
+    top:93%;
+    left:20%;
+    transform: translate(-20%,-50%);
+
+}
+.header span{
+    color: white
+}
+.header h2{
+    font-family: 'Roboto Condensed',sans-serif;
+    color: #ffffff;
+    font-size:60px ;
+    margin: 0px;
+    letter-spacing: 3px;
+    background-color:#212121 ;
+    opacity: 0.6;
+    width: 100%;
+}
+
+
+.graduate-program{
+  top: 0;
+    left: 0;
+    height: 500px;
+    text-align: center;
+    z-index: -1;
+}
+.graduate-program h3{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-family: Muli,Segoe UI,Verdana;
+    color: #212121;
+    font-weight: 400;
+}
+.graduate-program h1{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-family: Montserrat;
+    color: white;
+    font-weight: 400;
+}
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/***Doing a card**/
+/**Example: Doing a card of mba**/
+/** Beginning of card header**/
+.card-header
+{
+    background-color: #2e3192;
+    height: 35px;
+    color: white;
+}
+.card-header:hover{
+    transition: all .10s  ease-out;
+    transform:translateY(-10px) ;
+    background-color: #ffcd42;
+
+}
+/**End of card header**/
+/** Beginning card content**/
+
+.mba{
+    margin: 0 20px;
+    overflow: hidden;
+    border-bottom: 7px solid;
+    border-color:   #2e3192;
+    height: 407px;
+   /* background-image: url("../images/mba.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mba:hover {
+    border-color: #ffcd42;
+}
+.description-program{
+    margin-top: 100px;
+    background-color: white;
+    color: #2e3192;
+    transition: transform .2s;
+    height: 200px;
+    opacity: .9;
+}
+
+.description-program:hover{
+    transition: all .6s  ease-out;
+    transform:translateY(-100px) ;
+    height: 400px;
+
+}
+.see-more{
+    display: none;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e42d22;
+    border-radius: 10px;
+    box-shadow: 5px 10px 30px rgba(2,82,255,0.137);
+    color: white;
+    top:37%;
+    right:5%;
+
+}
+/***End of card content**/
+.msse{
+   /* background-image: url("../images/msse.jpg");*/
+    margin: 0 20px;
+    overflow: hidden;
+    border-bottom: 7px solid;
+    border-color: #375073;
+    height: 407px;
+    background-repeat: no-repeat;
+    background-size: cover
+
+}
+
+.msse:hover{
+    border-color:  #ffcd42;
+}
+
+/**undergraduate**/
+
+.undergraduate-program{
+   width: 100%;
+    height: 1400px;
+    position: relative;
+    text-align: center;
+
+}
+.undergraduate-program h3{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-family: Muli,Segoe UI,Verdana;
+    color: #212121;
+    font-weight: 400;
+}
+.undergraduate-program-card{
+    width: 45%;
+    height: 500px;
+}
+
+.computer-science{
+    margin: 0 20px;
+    overflow: hidden;
+    border-bottom: 7px solid;
+    border-color:   #2e3192;
+    height: 407px;
+   /* background-image: url("../images/computer-science.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.computer-science:hover {
+    border-color: #ffcd42;
+}
+.information-technology{
+    margin: 0 20px;
+    overflow: hidden;
+    border-bottom: 7px solid;
+    border-color:   #2e3192;
+    height: 407px;
+    /*background-image: url("../images/it.jpeg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.information-technology:hover {
+    border-color: #ffcd42;
+}
+.electrical-tech{
+    margin: 0 20px;
+    overflow: hidden;
+    border-bottom: 7px solid;
+    border-color:   #2e3192;
+    height: 407px;
+   /* background-image: url("../images/electrical-tech.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.electrical-tech:hover {
+    border-color: #ffcd42;
+}
+.telecom{
+    margin: 0 20px;
+    overflow: hidden;
+    border-bottom: 7px solid;
+    border-color:   #2e3192;
+    height: 407px;
+    /*background-image: url("../images/telecom.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.telecom:hover {
+    border-color: #ffcd42;
+}
+.mechanical{
+    margin: 0 20px;
+    overflow: hidden;
+    border-bottom: 7px solid;
+    border-color:   #2e3192;
+    height: 407px;
+   /* background-image: url("../images/mechanical.png");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mechanical:hover {
+    border-color: #ffcd42;
+}
+.economics{
+    margin: 0 20px;
+    overflow: hidden;
+    border-bottom: 7px solid;
+    border-color:   #2e3192;
+    height: 407px;
+   /* background-image: url("../images/economics.png");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.economics:hover {
+    border-color: #ffcd42;
+}
+/***professional training**/
+
+.professional-training{
+    width: 100%;
+    height: 100vh;
+    padding-top: 40px;
+    text-align: center;
+
+
+}
+.professional-training h3{
+    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-family: Muli,Segoe UI,Verdana;
+    color: #212121;
+    font-weight: 400;
+}
+.bea{
+    margin: 0 20px;
+    overflow: hidden;
+    border-bottom: 7px solid;
+    border-color:   #2e3192;
+    height: 407px;
+   /* background-image: url("../images/computer-science.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bea:hover {
+    border-color: #ffcd42;
+}
+.cisco{
+    margin: 0 20px;
+    overflow: hidden;
+    border-bottom: 7px solid;
+    border-color:   #2e3192;
+    height: 407px;
+    /*background-image: url("../images/cisco.png");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cisco:hover {
+    border-color: #ffcd42;
+}

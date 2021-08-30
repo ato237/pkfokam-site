@@ -41,31 +41,31 @@ const Navbar = () => {
 							onMouseLeave={() => setOpenPrograms(false)}
 							style={openProgram ? { display: "block" } : { display: "none" }}>
 							<NavTitle>Graduate Programs</NavTitle>
-							<NavLinksDrop to="/partners">MABA</NavLinksDrop>
-							<NavLinksDrop to="/partners">MSSE</NavLinksDrop>
+							<NavLinksDrop to="/programs/MBA">MABA</NavLinksDrop>
+							<NavLinksDrop to="/programs/MSSE">MSSE</NavLinksDrop>
 							<NavTitle>UnderGraduate Programs</NavTitle>
-							<NavLinksDrop to="/partners">Computer Science</NavLinksDrop>
+							<NavLinksDrop to="/programs/computer-science">Computer Science</NavLinksDrop>
 
-							<NavLinksDrop to="/partners">Information Technology</NavLinksDrop>
+							<NavLinksDrop to="/programs/information-technology">Information Technology</NavLinksDrop>
 
-							<NavLinksDrop to="/partners">Electrical Technology</NavLinksDrop>
+							<NavLinksDrop to="/programs/electrical-engineering">Electrical Technology</NavLinksDrop>
 
-							<NavLinksDrop to="/partners">Technology</NavLinksDrop>
+							<NavLinksDrop to="/programs/technology">Technology</NavLinksDrop>
 
-							<NavLinksDrop to="/partners">
+							<NavLinksDrop to="/programs/telecomunication-engineering">
 								Telecomunications Engineering
 							</NavLinksDrop>
 
-							<NavLinksDrop to="/partners">
+							<NavLinksDrop to="/programs/mechanical-engineering">
 								Mechanical Engineering Technology
 							</NavLinksDrop>
-							<NavLinksDrop to="/partners">
+							<NavLinksDrop to="/programs/economics-and-management">
 								Economics and Management
 							</NavLinksDrop>
 							<NavTitle>Proffessional Training</NavTitle>
-							<NavLinksDrop to="/partners">Business Excellence</NavLinksDrop>
-							<NavLinksDrop to="/partners">Academy</NavLinksDrop>
-							<NavLinksDrop to="/partners">CISCO</NavLinksDrop>
+							<NavLinksDrop to="/programs/business-excellence">Business Excellence</NavLinksDrop>
+							<NavLinksDrop to="/programs/academy">Academy</NavLinksDrop>
+							<NavLinksDrop to="/programs/CISCO">CISCO</NavLinksDrop>
 						</DropdownContent>
 					</NavbarElements>
 					<NavbarElements>
@@ -80,10 +80,10 @@ const Navbar = () => {
 							onMouseLeave={() => setOpenEmployee(false)}
 							style={openEmployee ? { display: "block" } : { display: "none" }}>
 							<NavTitle>Staff</NavTitle>
-							<NavLinksDrop to="/partners">President & VIP</NavLinksDrop>
-							<NavLinksDrop to="/partners">Administration</NavLinksDrop>
-							<NavLinksDrop to="/partners">Faculty</NavLinksDrop>
-							<NavLinksDrop to="/partners">Research Center</NavLinksDrop>
+							<NavLinksDrop to="/employees/predident&VIP">President & VIP</NavLinksDrop>
+							<NavLinksDrop to="/employees/administration">Administration</NavLinksDrop>
+							<NavLinksDrop to="/employees/faculty">Faculty</NavLinksDrop>
+							<NavLinksDrop to="/employees/research-center">Research Center</NavLinksDrop>
 						</DropdownContent>
 					</NavbarElements>
 					<NavbarElements>
@@ -101,8 +101,8 @@ const Navbar = () => {
 							<NavLinksDrop to="/partners">
 								Administration and Enrollment
 							</NavLinksDrop>
-							<NavLinksDrop to="/partners">Rules and Regulation</NavLinksDrop>
-							<NavLinksDrop to="/partners">Clubs</NavLinksDrop>
+							<NavLinksDrop to="/students/rules-regulations">Rules and Regulation</NavLinksDrop>
+							<NavLinksDrop to="/students/clubs">Clubs</NavLinksDrop>
 						</DropdownContent>
 					</NavbarElements>
 					<NavbarElements>

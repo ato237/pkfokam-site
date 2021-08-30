@@ -39,14 +39,15 @@ export const Logoimg = styled.img`
 export const TitleS = styled.h1`
 	text-decoration: none;
 	display: none;
-	padding-left: 10px;
+	padding-right: 90px;
 	font-size: 18px;
 	color: #2e3192;
-	@media screen and (max-width: 340px) {
+	@media screen and (max-width: 371px) {
 		display: inline;
 	}
 `;
 export const Title = styled.h1`
+
 	text-decoration: none;
 	font-family: "Patua One", cursive;
 	padding-left: 20px;
@@ -57,7 +58,7 @@ export const Title = styled.h1`
 	}
 	@media screen and (max-width: 696px) {
 		font-size: 18px;
-		padding-right: 200px;
+		padding-right: 180px;
 	}
 	@media screen and (max-width: 633px) {
 		padding-left: 10px;
@@ -65,7 +66,7 @@ export const Title = styled.h1`
 		font-size: 15px;
 		padding-right: 0;
 	}
-	@media screen and (max-width: 340px) {
+	@media screen and (max-width: 371px) {
 		display: none;
 	}
 `;
