@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     borderBottom: "1px solid #E42D22",
     paddingBottom: "2px",
     width: "20%",
-    margin: "45px",
+    margin: "105px",
   },
   heading: {
     color: "#1E2061",
