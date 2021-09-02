@@ -1,7 +1,7 @@
 import React from "react";
 import { Image } from "./ImageSliderElements";
 import Carousel from "react-material-ui-carousel";
-import images from "../Images/img1.jpg";
+import images from "../Images/RCtof.jpg";
 
 import images4 from "../Images/img4.jpg";
 import { GrNext } from "react-icons/gr";

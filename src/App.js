@@ -7,6 +7,8 @@ import ImageSlider from "./components/ImageSlider";
 import Footer from "./components/Footer";
 import Overview from "./pages/Overview";
 import Info from "./Sections";
+import Announcement from "./Sections/Announcement";
+import Announce from "./Sections/Announce";
 
 
 function App() {
@@ -21,7 +23,9 @@ function App() {
 				<Logo />
 				<Navbar />
 				<ImageSlider />
-				<Info/>
+				<Info />
+				<Announcement />
+				<Announce/>
 				<Footer />
 			</Router>
 		</>
