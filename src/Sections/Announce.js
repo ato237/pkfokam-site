@@ -1,9 +1,11 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import tony from "../components/Images/Djamen.jpg";
 import { Button, Card } from "@material-ui/core";
+import "aos/dist/aos.css"
+import Aos from "aos";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -52,7 +54,9 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Announce() {
   const classes = useStyles();
-
+  useEffect(() => {
+    Aos.init({duration:3000})
+  }, [])
   return (
     <div className={classes.root}>
       <Typography
@@ -66,7 +70,7 @@ export default function Announce() {
       <Grid container spacing={3}>
         <Grid item xs={6}>
           <Card elevation={0}>
-            <h1 className={classes.title}>Djamen Chris The Most Intelligent</h1>
+            <h1 className={classes.title}>Entrance Exam Launched!</h1>
             <p className={classes.text}>
               Djamen Chris is the most intelligent on campus. He has had numeros
               diplomas including the CISCO diploma and he keeps on Chasing them
@@ -77,7 +81,7 @@ export default function Announce() {
         </Grid>
         <Grid item xs={6}>
           <Card elevation={0}>
-            <img className={classes.img} src={tony} />
+            <img data-aos="fade-left" className={classes.img} src={tony} alt="djamen" />
           </Card>
         </Grid>
       </Grid>

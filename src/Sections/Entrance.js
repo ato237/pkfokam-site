@@ -14,8 +14,12 @@ const useStyles = makeStyles((theme) => ({
   programs: {
     borderBottom: "1px solid #E42D22",
     paddingBottom: "2px",
-    width: "30%",
-    margin: "45px",
+    width: "60%",
+      margin: "45px",
+      fontSize: "50px",
+      textAlign: "center",
+      color: "#3B3D99",
+    fontWeight:800
   },
   paper: {
     padding: theme.spacing(2),
@@ -48,10 +52,15 @@ const useStyles = makeStyles((theme) => ({
       backgroundColor: '#E42D22',
       color: "white"
     }
-  },
+    },
+    pos: {
+        position: "relative",
+        bottom: "350px",
+        left:"350px"
+  }
 }));
 
-export default function Announcement() {
+export default function Entrance() {
   const classes = useStyles();
   useEffect(() => {
     Aos.init({duration:2000})
@@ -64,25 +73,38 @@ export default function Announcement() {
         variant="h4"
         component="h2"
       >
-        Success at it's finest
+        #Pkfokam The place To BE
       </Typography>
-      <Grid container spacing={3}>
-        <Grid justifyContent="center" spacing={0} item xs={6}>
+      <Grid justifyContent="center" container spacing={3}>
+        <Grid  spacing={0} item xs={6}>
           <Card elevation={0}>
             <img data-aos="fade-right" className={classes.img} src={tony} alt="yosai" />
           </Card>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={3}>
           <Card elevation={0}>
-            <h1 className={classes.title}>The Best Student ATO Bradley</h1>
-            <p className={classes.text}>
-              ATO Bradley is a Junior year student in Pkfokam institute and
-              there is honestly nothing more to say about him. He is just an
-              amazing young man with extremely big brains. Only he knows
-            </p>
-            <Button className={classes.button}>Read More About ATO</Button>
+          <img className={classes.img} src={tony} alt="yosai" />
+
           </Card>
         </Grid>
+        <Grid item xs={3}>
+          <Card elevation={0}>
+          <img  className={classes.img} src={tony} alt="yosai" />
+
+          </Card>
+              </Grid>
+              <Grid className={classes.pos}  item xs={3}>
+          <Card elevation={0}>
+          <img  className={classes.img} src={tony} alt="yosai" />
+
+          </Card>
+              </Grid>
+              <Grid className={classes.pos} item xs={3}>
+          <Card elevation={0}>
+          <img className={classes.img} src={tony} alt="yosai" />
+
+          </Card>
+              </Grid>
       </Grid>
     </div>
   );

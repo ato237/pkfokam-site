@@ -9,6 +9,7 @@ import Overview from "./pages/Overview";
 import Info from "./Sections";
 import Announcement from "./Sections/Announcement";
 import Announce from "./Sections/Announce";
+import Entrance from "./Sections/Entrance";
 
 
 function App() {
@@ -25,7 +26,8 @@ function App() {
 				<ImageSlider />
 				<Info />
 				<Announcement />
-				<Announce/>
+				<Announce />
+				<Entrance/>
 				<Footer />
 			</Router>
 		</>
