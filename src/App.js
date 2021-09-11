@@ -10,24 +10,23 @@ import Info from "./Sections";
 import Announcement from "./Sections/Announcement";
 import Announce from "./Sections/Announce";
 import Entrance from "./Sections/Entrance";
-
+import { obj1,obj2 } from "./Sections/Data";
 
 function App() {
 	return (
 		<>
 			<Router>
-			<Switch>
+				<Switch>
 					<Route path="/overview" exact component={Overview} />
-					<Route path="/overview/users" exact component={Overview}/>
+					<Route path="/overview/users" exact component={Overview} />
 				</Switch>
 				<Subnavbar />
 				<Logo />
 				<Navbar />
 				<ImageSlider />
-				<Info />
-				<Announcement />
-				<Announce />
-				<Entrance/>
+				<Announcement {...obj1} />
+				<Announcement {...obj2} />
+				<Entrance />
 				<Footer />
 			</Router>
 		</>

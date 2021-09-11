@@ -1,7 +1,8 @@
 import styled from "styled-components";
 import { Link as Links } from "react-router-dom";
 
-export const NavbarContainer = styled.div``;
+export const NavbarContainer = styled.div`
+`;
 
 export const NavbarWrapper = styled.ul`
 

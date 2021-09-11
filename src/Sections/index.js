@@ -1,11 +1,6 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
+import { makeStyles,createTheme } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
-import FormLabel from "@material-ui/core/FormLabel";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import Radio from "@material-ui/core/Radio";
-import Paper from "@material-ui/core/Paper";
 import Card from "@material-ui/core/Card";
 import CardActionArea from "@material-ui/core/CardActionArea";
 import CardActions from "@material-ui/core/CardActions";
@@ -19,17 +14,41 @@ import Img2 from "../components/Images/mech.jpg";
 import Img3 from "../components/Images/vomp.jpg";
 import { Link } from "react-router-dom";
 
+// eslint-disable-next-line
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 600,
+      med:1366,
+      md: 1004,
+      lg: 1280,
+      xl: 1920,
+    },
+  },
+})
+
 const useStyles = makeStyles((theme) => ({
   root: {
     borderRadius: "0px",
     position: "relative",
     right: "20px",
+    padding: "20px"
+  
   },
   paper: {},
   control: {},
   pors: {
     width: "400px",
     boxShadow: "none",
+    [theme.breakpoints.up('md')]: {
+      transition:"0.1s ease-in-out",
+      width:"300px",
+    },
+    [theme.breakpoints.up('sm')]: {
+      transition:"0.1s ease-in-out",
+      width:"250px",
+    },
   },
   programs: {
     borderBottom: "1px solid #E42D22",
@@ -68,12 +87,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function SpacingGrid() {
+  // eslint-disable-next-line
   const [spacing, setSpacing] = React.useState(2);
   const classes = useStyles();
-
-  const handleChange = (event) => {
-    setSpacing(Number(event.target.value));
-  };
 
   return (
     <>
@@ -85,11 +101,11 @@ export default function SpacingGrid() {
       >
         Our Programs
       </Typography>
-      <Grid container className={classes.root} spacing={0}>
+      <Grid container spacing={0}>
         <Grid item xs={12}>
           <Grid container justifyContent="center" spacing={spacing}>
           <Link to ='/computer-engineering' className={classes.link}>
-            <Grid item>
+            <Grid item >
               <Card elevation={0} className={classes.root}>
                 <CardActionArea className={classes.pors}>
                   <CardMedia
