@@ -22,43 +22,44 @@ const theme = createTheme({
 });
 
 const useStyles = makeStyles((theme) => ({
-  item2:  {
-      order: isLeft => isLeft ? 2 : 3,
-      [theme.breakpoints.down("sm")]: {
-        order:isRight => isRight? 3 : 2,
-      },
-  },
-  item3:{
-      order: isLeft => isLeft ? 3 : 2,
-      [theme.breakpoints.down("sm")]: {
-        order: 2,
-      },
-  },
-  root: {
-    flexGrow: 1,
-	  padding: "80px",
-	  [theme.breakpoints.down("sm")]: {
-		padding: "25px",
-	},
-  },
-	programs: {
-		fontFamily: "Roboto, sans-serif",
+    item2: {
+        background: "#2E3192",
 
+    order:3,
+    [theme.breakpoints.down("sm")]: {
+      order: (isRight) => (isRight ? 3 : 2),
+    },
+  },
+    item3: {
+      background: "#2E3192",
+    order: (isLeft) => (isLeft ? 3 : 2),
+    [theme.breakpoints.down("sm")]: {
+      order: 2,
+    },
+  },
+    root: {
+        
+        marginBottom:"80px",
+      background: "#1E2061",
+    flexGrow: 1,
+    padding: "80px",
+    [theme.breakpoints.down("sm")]: {
+      padding: "25px",
+    },
+  },
+  programs: {
+      color: "white",
+      fontSize: "60px",
+    maxWidth:"300px",
     paddingBottom: "2px",
     width: "100%",
     margin: "45px",
-    borderBottom: "1px solid #E42D22",
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
   },
   img: {
     width: "100%",
   },
-	title: {
-		fontFamily: "Roboto, sans-serif",
+  title: {
+    fontFamily: "Roboto, sans-serif",
 
     maxWidth: "1000px",
     fontSize: "100px",
@@ -80,24 +81,23 @@ const useStyles = makeStyles((theme) => ({
       fontSize: "50px",
     },
   },
-	text: {
-		fontFamily: "Roboto, sans-serif",
-
+    text: {
+        background: "#2E3192",
+    fontFamily: "Roboto, sans-serif",
     maxWidth: "1000px",
     fontSize: "20px",
-    color: "#000",
+    color: "#fff",
     [theme.breakpoints.down("md")]: {
       fontSize: "20px",
       maxWidth: "1000px",
     },
   },
-	button: {
-    padding: "20px 30% 20px 30%",
+  button: {
+    padding: "20px 61px 20px 61px",
     margin: "60px",
     marginLeft: "0",
-    border: " 3px solid",
     fontWeight: 1000,
-    borderColor: "#E42D22",
+    backgroundColor: "#FFA500",
     color: "black",
     lineHeight: 1,
     "&:hover": {
@@ -112,7 +112,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Announcement({ button,Img, heading, text, title,isLeft }) {
+export default function Apply({ button, Img, heading, text, title, isLeft }) {
   const classes = useStyles(isLeft);
   useEffect(() => {
     Aos.init({ duration: 2000 });
@@ -127,14 +127,7 @@ export default function Announcement({ button,Img, heading, text, title,isLeft }
           alignItems: "center",
         }}
       >
-        <Typography
-          className={classes.programs}
-          gutterBottom
-          variant="h4"
-          component="h2"
-        >
-          {title}
-        </Typography>
+      
       </div>
       <Grid container item spacing={6}>
         <Grid
@@ -148,25 +141,29 @@ export default function Announcement({ button,Img, heading, text, title,isLeft }
         >
           <Grid item>
             <Box order={2}>
-              <img
-                data-aos="fade-right"
-                className={classes.img}
-                src={Img}
-                alt="yosai"
-              />
+              <Typography
+                className={classes.programs}
+                gutterBottom
+                variant="h4"
+                component="h2"
+              >
+                Apply To PKFOKAM TODAY
+              </Typography>
             </Box>
           </Grid>
         </Grid>
         <Grid className={classes.item2} item xs={12} md={6} lg={6}>
-          <Box order={1}>
-            <Card elevation={0}>
               <h1 className={classes.title}>{heading}</h1>
-              <p className={classes.text}>{text}</p>
-              <Button className={classes.button}>{button}</Button>
-            </Card>
-          </Box>
-			  </Grid>
-			  
+              <p className={classes.text}>
+                Every year, hundreds of students – including a
+                record 274 degree-credit students – choose The Pkfokam
+                institure of Excellence for a multitude of reasons that can be
+                summed up as one: opportunity. Providing a quality, accessible
+                education, regardless of background or means, has been CUNY’s
+                mission since 2006.
+              </p>
+              <Button className={classes.button}>APPLY NOW</Button>
+        </Grid>
       </Grid>
     </div>
   );

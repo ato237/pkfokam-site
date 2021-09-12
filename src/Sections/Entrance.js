@@ -3,6 +3,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import tony from "../components/Images/tony.jpg";
+import yosai from "../components/Images/yosai.jpg";
+
 import { Card } from "@material-ui/core";
 import "aos/dist/aos.css";
 import Aos from "aos";
@@ -69,8 +71,16 @@ export default function Entrance() {
 	}, []);
 	return (
 		<div className={classes.root}>
+			<Typography
+          className={classes.programs}
+          gutterBottom
+          variant="h4"
+          component="h2"
+        >
+          PKFokam The PLACE TO BE
+        </Typography>
 			<Grid justifyContent="center" container spacing={3}>
-				<Grid spacing={0} item xs={6}>
+				<Grid spacing={0} item xs={12} md={6} lg={4}>
 					<Card elevation={0}>
 						<img
 							data-aos="fade-right"
@@ -80,12 +90,12 @@ export default function Entrance() {
 						/>
 					</Card>
 				</Grid>
-				<Grid item xs={3}>
+				<Grid item xs={12} md={6} lg={4}>
 					<Card elevation={0}>
-						<img className={classes.img} src={tony} alt="yosai" />
+						<img className={classes.img} src={yosai} alt="yosai" />
 					</Card>
 				</Grid>
-				<Grid item xs={3}>
+				<Grid item xs={12} md={6} lg={4}>
 					<Card elevation={0}>
 						<img className={classes.img} src={tony} alt="yosai" />
 					</Card>

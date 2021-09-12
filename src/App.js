@@ -6,11 +6,11 @@ import Logo from "./components/Logo";
 import ImageSlider from "./components/ImageSlider";
 import Footer from "./components/Footer";
 import Overview from "./pages/Overview";
-import Info from "./Sections";
 import Announcement from "./Sections/Announcement";
 import Announce from "./Sections/Announce";
 import Entrance from "./Sections/Entrance";
-import { obj1,obj2 } from "./Sections/Data";
+import { obj1,obj2,obj3, objAnnonce1, objAnnonce2 } from "./Sections/Data";
+import Apply from "./Sections/Apply";
 
 function App() {
 	return (
@@ -24,9 +24,14 @@ function App() {
 				<Logo />
 				<Navbar />
 				<ImageSlider />
+				<Announce {...objAnnonce1}/>
 				<Announcement {...obj1} />
 				<Announcement {...obj2} />
+				<Announce {...objAnnonce2} />
+	
+				<Announcement {...obj3} />
 				<Entrance />
+				<Apply/>
 				<Footer />
 			</Router>
 		</>
